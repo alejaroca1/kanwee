@@ -1,3 +1,4 @@
+/*
 //Calcular el costo total de productos servicios seleccionados por el usuario
 //Lista de productos para guardar el precio
 const productos = [
@@ -65,3 +66,4 @@ function calcularCostoTotal(productosSeleccionados) {
 
 const costoTotal = calcularCostoTotal(productosSeleccionados);
 console.log(`El costo total de los productos seleccionados es: $${costoTotal}`);
+*/
