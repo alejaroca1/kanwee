@@ -9,39 +9,91 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
     <script defer src="js/funciones.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@900&display=swap" rel="stylesheet">
+
 </head>
-<body class="p-3">
+<body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light container">
-           
-            <a class="navbar-brand fs-3 ms-3" href="index.html">
-                <img src="./assets/img/Logo.png" alt="Logo de Kanwee que contiene la letra K y W juntas">
-            </a>
-            
-            <a class="navbar-brand" href="#">Kanwee.co</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                        </form>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link cart-icon" href="#">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Carrito de compras
-                        </a>
-                    </li>
+              </button>
+              <a class="navbar-brand p-4" href="#">
+                <img src="./assets/img/logo_navbar.png" alt="El logo de la marca kanwee, es una k girada horizontalmente unida con una k" width="80" class="d-inline-block align-text-top nav-logo">
+              </a>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/products.html">Productos</a>
+                  </li>
                 </ul>
+                <div class="d-flex">
+                  <button class="btn btn-outline-info" type="button">
+                    <i class="fas fa-cart-plus"></i>
+                    <span class="cart-items badge bg-info">0</span>
+                  </button>
+                </div>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
+    <!--Carrusel de banners-->
+    <div class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/banner_1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/banner_2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/banner_3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/banner_4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--Productos destacados-->
+      <section class="section-featured">
+        <div class="title">
+            <h2>¡Compra nuestros productos con descuento y recíbelos hoy mismo!</h2>
+        </div>
+        <div class="products-center-index">
+        </div>
+        <template product-template> 
+            <article class="product">
+                <div class="img-container">
+                    <img src='' alt="product" class="product-img"/>
+                    <button class="bag-btn" data-id=''><i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <h3></h3>
+                <h4></h4>
+            </article>
+        </template>
+        <a href="./pages/products.html" class="btn"> all products </a>
+    </section>
 
     <h1>E-commerce Kanwee.co</h1>
     <h2>Encuentra tus productos favoritos en nuestra página web:</h2>

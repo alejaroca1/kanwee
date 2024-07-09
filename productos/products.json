@@ -1,0 +1,124 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "Bronceador Canela",
+          "price": 68200,
+          "image": { "fields": { "file": { "url": "./assets/img/bronceador_canela_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Autobronceador Chocolate",
+          "price": 65450,
+          "image": { "fields": { "file": { "url": "./assets/img/autobronceador_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Tratamiento Celulitis",
+          "price": 3000,
+          "image": { "fields": { "file": { "url": "./assets/img/tratamiento_control_celulitis_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "Anillo Acero Negro",
+          "price": 15600,
+          "image": { "fields": { "file": { "url": "./assets/img/tratamiento_control_celulitis_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Anillo Acero Negro Cuadrado",
+          "price": 3500,
+          "image": { "fields": { "file": { "url": "./assets/img/anillo_acero_cuadrado_negro_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Anillo Estrellas Irregular",
+          "price": 22500,
+          "image": { "fields": { "file": { "url": "./assets/img/anillo_estrella_irregular_plateado_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "Aretes Corazón Alambre",
+          "price": 18900,
+          "image": { "fields": { "file": { "url": "./assets/img/aretes_alambre_corazon_plateado_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "Bicicletero Negro",
+          "price": 38500,
+          "image": { "fields": { "file": { "url": "./assets/img/biker_negro_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "9" },
+        "fields": {
+          "title": "Blusa Corset Negra",
+          "price": 52000,
+          "image": { "fields": { "file": { "url": "./assets/img/blusa_corset_negro_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "10" },
+        "fields": {
+          "title": "Cadena Cintura Sencilla Plateado",
+          "price": 28500,
+          "image": { "fields": { "file": { "url": "./assets/img/cadena_sencilla_cintura_plateado_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "11" },
+        "fields": {
+          "title": "Cinturón Ejercicio Mancuernas Rosado",
+          "price": 45200,
+          "image": { "fields": { "file": { "url": "./assets/img/cinturon_mancuernas_rosado_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "12" },
+        "fields": {
+          "title": "Par Collar Lego Corazón Rojo",
+          "price": 28500,
+          "image": { "fields": { "file": { "url": "./assets/img/collar_corazon_lego_rojo_1.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "13" },
+        "fields": {
+          "title": "Collar LED Mascota Verde",
+          "price": 22000,
+          "image": { "fields": { "file": { "url": "./assets/img/collar_corazon_lego_rojo_1.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "14" },
+        "fields": {
+          "title": "Sobres Protección RFID 5unds",
+          "price": 17000,
+          "image": { "fields": { "file": { "url": "./assets/img/sobres_rfid_5unds_1" } } }
+        }
+      },
+      {
+        "sys": { "id": "15" },
+        "fields": {
+          "title": "Salero Varita ",
+          "price": 18500,
+          "image": { "fields": { "file": { "url": "./assets/img/varita_salero_1" } } }
+        }
+      }
+    ]
+  }

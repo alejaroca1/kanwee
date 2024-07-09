@@ -1,8 +1,9 @@
-.navbar-brand img {
-    height: 80px;
-    width: auto;
+* {
+    margin: 0;
+    padding: 0;
 }
-.cart-icon img {
-    height: 24px;
-    width: auto;
+ 
+.header {
+    background-color: white;
+    font-family: 'Ruda', sans-serif;
 }
