@@ -3,10 +3,10 @@
       "id": 1,
       "name": "Bronceador Canela",
       "price": "$68200",
+      "categoria": "Cuidado Personal",
       "images": [
         {
-          "url": "./assets/img/bronceador_canela_1",
-          "color": "#FF7F50"
+          "url": "./assets/img/bronceador_canela_1.png"
         }
       ]
     },
@@ -14,21 +14,21 @@
       "id": 2,
       "name": "Autobronceador Chocolate",
       "price": "$65450",
+      "categoria": "Cuidado Personal",
       "images": [
         {
-          "url": "./assets/img/autobronceador_1.png",
-          "color": "#8B4513"
+          "url": "./assets/img/autobronceador_1.png"
         }
       ]
     },
     {
       "id": 3,
       "name": "Tratamiento Celulitis",
-      "price": "$3000",
+      "price": "$35000",
+      "categoria": "Cuidado Personal",
       "images": [
         {
-          "url": "./assets/img/tratamiento_control_celulitis_1.png",
-          "color": "#FFD700"
+          "url": "./assets/img/tratamiento_control_celulitis_1.png"
         }
       ]
     },
@@ -36,21 +36,21 @@
       "id": 4,
       "name": "Anillo Acero Negro",
       "price": "$15600",
+      "categoria": "Accesorios",
       "images": [
         {
-          "url": "./assets/img/anillo_acero_negro_1.png",
-          "color": "#000000"
+          "url": "./assets/img/anillo_acero_negro_1.jpg"
         }
       ]
     },
     {
       "id": 5,
       "name": "Anillo Acero Negro Cuadrado",
-      "price": "$3500",
+      "price": "$15600",
+      "categoria": "Accesorios",
       "images": [
         {
-          "url": "./assets/img/anillo_acero_cuadrado_negro_1.png",
-          "color": "#000000"
+          "url": "./assets/img/anillo_acero_cuadrado_negro_1.jpg"
         }
       ]
     },
@@ -58,10 +58,10 @@
       "id": 6,
       "name": "Anillo Estrellas Irregular",
       "price": "$22500",
+      "categoria": "Accesorios",
       "images": [
         {
-          "url": "./assets/img/anillo_estrella_irregular_plateado_1.png",
-          "color": "#C0C0C0"
+          "url": "./assets/img/anillo_estrella_irregular_plateado_1.png"
         }
       ]
     },
@@ -69,10 +69,10 @@
       "id": 7,
       "name": "Aretes Corazón Alambre",
       "price": "$18900",
+      "categoria": "Accesorios",
       "images": [
         {
-          "url": "./assets/img/aretes_alambre_corazon_plateado_1.png",
-          "color": "#FF1493"
+          "url": "./assets/img/aretes_alambre_corazon_plateado_1.png"
         }
       ]
     },
@@ -80,10 +80,10 @@
       "id": 8,
       "name": "Bicicletero Negro",
       "price": "$38500",
+      "categoria": "Ropa",
       "images": [
         {
-          "url": "./assets/img/biker_negro_1.png",
-          "color": "#000000"
+          "url": "./assets/img/biker_negro_1.png"
         }
       ]
     },
@@ -91,10 +91,10 @@
       "id": 9,
       "name": "Blusa Corset Negra",
       "price": "$52000",
+      "categoria": "Ropa",
       "images": [
         {
-          "url": "./assets/img/blusa_corset_negro_1.png",
-          "color": "#000000"
+          "url": "./assets/img/blusa_corset_negro_1.png"
         }
       ]
     },
@@ -102,10 +102,10 @@
       "id": 10,
       "name": "Cadena Cintura Sencilla Plateado",
       "price": "$28500",
+      "categoria": "Accesorios",
       "images": [
         {
-          "url": "./assets/img/cadena_sencilla_cintura_plateado_1.png",
-          "color": "#C0C0C0"
+          "url": "./assets/img/cadena_sencilla_cintura_plateado_1.png"
         }
       ]
     },
@@ -113,10 +113,10 @@
       "id": 11,
       "name": "Cinturón Ejercicio Mancuernas Rosado",
       "price": "$45200",
+      "categoria": "Deportes y Fitness",
       "images": [
         {
-          "url": "./assets/img/cinturon_mancuernas_rosado_1.png",
-          "color": "#FF69B4"
+          "url": "./assets/img/cinturon_mancuernas_rosado_1.png"
         }
       ]
     },
@@ -124,10 +124,10 @@
       "id": 12,
       "name": "Par Collar Lego Corazón Rojo",
       "price": "$28500",
+      "categoria": "Accesorios",
       "images": [
         {
-          "url": "./assets/img/collar_corazon_lego_rojo_1.png",
-          "color": "#FF0000"
+          "url": "./assets/img/collar_corazon_lego_rojo_1.png"
         }
       ]
     },
@@ -135,10 +135,10 @@
       "id": 13,
       "name": "Collar LED Mascota Verde",
       "price": "$22000",
+      "categoria": "Mascotas",
       "images": [
         {
-          "url": "./assets/img/collar_led_perro_verde_1.png",
-          "color": "#00FF00"
+          "url": "./assets/img/collar_led_perro_verde_1.png"
         }
       ]
     },
@@ -146,10 +146,10 @@
       "id": 14,
       "name": "Sobres Protección RFID 5unds",
       "price": "$17000",
+      "categoria": "Tendencias",
       "images": [
         {
-          "url": "./assets/img/sobres_rfid_5unds_1.png",
-          "color": "#4682B4"
+          "url": "./assets/img/sobres_rfid_5unds_1.png"
         }
       ]
     },
@@ -157,10 +157,10 @@
       "id": 15,
       "name": "Salero Varita",
       "price": "$18500",
+      "categoria": "Tendencias",
       "images": [
         {
-          "url": "./assets/img/varita_salero_1.png",
-          "color": "#D3D3D3"
+          "url": "./assets/img/varita_salero_1.png"
         }
       ]
     }

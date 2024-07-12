@@ -1,12 +1,9 @@
-//llamar al elemento DOM de los productos populares
 const mostPopPorducts = document.querySelector(".most-popular-products");
 
 const jsonFile = "./productos/products.json";
 
 fetch(jsonFile)
-	.then((respone) => {
-		return respone.json();
-	})
+	.then((response) => response.json())
 	.then((data) => {
 		data.map((product) => {
 			const { id, name, price, images } = product;
@@ -23,33 +20,7 @@ fetch(jsonFile)
 						<div class="product-card__text">${name}</div>
 						<div class="product-card__price">${price}</div>
 					</div>
-					<div class="product-card__color">
-                    ${images
-                        .map((image) => {
-                            const { url, color } = image;
-
-                            return `<button class="product-card__btn-radio" data-img="${url}">
-                                        <span style="background-color: ${color};"></span>
-                                     </button>`;
-                        })
-                        .join("")}
-						
-					</div>
 				</div>
         `;
-		});
-		const radioBtns = document.querySelectorAll(".product-card__btn-radio");
-		document.querySelectorAll(".product-card__color").forEach((pcc) => pcc.firstElementChild.classList.add("selected"));
-		radioBtns.forEach((radioBtn) => {
-			radioBtn.addEventListener("click", () => {
-				let productCard = radioBtn.parentElement.parentElement,
-					productImg = productCard.querySelector(".product-card__img > img"),
-					proRadioBtns = productCard.querySelectorAll(".product-card__btn-radio");
-				if (radioBtn.parentElement.parentElement === productCard) {
-					proRadioBtns.forEach((radioBtn) => radioBtn.classList.remove("selected"));
-					radioBtn.classList.add("selected");
-					productImg.src = radioBtn.dataset.img;
-				}
-			});
 		});
 	});
