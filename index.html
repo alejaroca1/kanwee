@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
     <header>
@@ -32,10 +34,10 @@
                     <a class="nav-link" aria-current="page" href="#">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/products.html">Productos</a>
+                    <a class="nav-link" href="#">Productos</a> <!--que lleve a la sección de la misma página de los productos-->
                   </li>
                 </ul>
-                <div class="d-flex">
+                <div class="d-flex px-4">
                   <button class="btn btn-outline-info" type="button">
                     <i class="fas fa-cart-plus"></i>
                     <span class="cart-items badge bg-info">0</span>
@@ -45,8 +47,9 @@
             </div>
           </nav>
     </header>
+
     <!--Carrusel de banners-->
-    <div class="carousel slide">
+    <div class="carousel slide p-4">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -75,16 +78,102 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+    </div>
+
+    <!--Productos-->
+    <section class="products" id="products">
+      
+      <!-- filters -->
+          <div class="filters">
+              <div class="filters-container">
+                  
+                <!-- search -->
+                  <form action="" class="section-title-filter">
+                      <input id="filterInput" type="search" placeholder="Search. . ." data-search>
+                  </form>
+                  
+                  <!-- categories -->
+                  <h5>Filtros</h5>
+                  <article class="companies">
+                      <button class="company-btn btn-all">Todo</button>
+                      <button class="company-btn btn-changas">Accesorios</button>
+                      <button class="company-btn btn-vans">Ropa</button>
+                      <button class="company-btn btn-puma">Cuidado Personal</button>
+                      <button class="company-btn btn-random">Tendencias</button>
+                  </article>
+                  
+                  <!-- price -->
+                  <h5>Precio</h5>
+                  <form class="price-form">
+                      <input type="range" class="price-filter" min="0" value="12000" max="12000"/>
+                  </form>
+                  <span class="price-value">Value : $80000</span>
+              </div>
+          </div>
+          <!-- end of filter -->
+          
+          <div class="products-center">
+          </div>
+          <template product-template> <!-- No se muestra en el HTML pero lo puedo usar en JS-->
+              <!-- single product-->
+              <article class="product">
+                  <div class="img-container">
+                      <img src='' alt="product" class="product-img"/>
+                      <button class="bag-btn" data-id=''><i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                  <h3></h3>
+                  <h4></h4>
+              </article>
+              <!-- end of single product-->;
+          </template>
+      </section>
+      
+      <!-- end of products -->
+          <!-- sidebar -->
+          <div class="sidebar-overlay">
+              <aside class="sidebar">
+                  <!-- close -->
+                  <button class="sidebar-close"><i class="fas fa-times"></i></button>
+                  <!-- links -->
+                  <ul class="sidebar-links">
+                      <li>
+                          <a href="../index.html" class="sidebar-link"><i class="fas fa-home fa-fw"></i>home</a>
+                      </li>
+                      <li>
+                          <a href="#" class="sidebar-link"><i class="fas fa-shopping-basket fa-fw"></i>products</a>
+                      </li>
+                      <li>
+                          <a href="./about.html" class="sidebar-link"><i class="fas fa-book fa-fw"></i>about</a>
+                      </li>
+                  </ul>
+              </aside>
+          </div>
+          <!-- end of sidebar -->
+      <!-- cart -->
+      <div class="cart-overlay">
+          <div class="cart">
+              <span class="close-cart">
+                  <i class="fas fa-window-close"></i>
+              </span>
+              <h2>your cart</h2>
+              <div class="cart-content">
+                  <!-- cart item -->
+                  <!-- <div class="cart-item">
+                  </div> -->
+                  <!-- end of cart item -->
+              </div>
+              <div class="cart-footer">
+                  <h3>your total : $ <span class="cart-total">0</span></h3>
+                  <div class="cart-footer-banner-btn">
+                      <button class="clear-cart banner-btn">clear cart</button>
+                      <button class="check-out-cart banner-btn">check out</button>
+                  </div>
+              </div>
+          </div>
       </div>
-    <!--Productos destacados-->
-      <section class="section-featured">
-        <div class="title">
-            <h2>¡Compra nuestros productos con descuento y recíbelos hoy mismo!</h2>
-        </div>
 
-        <div class="most-popular-products"></div>
 
-    </section>
+
 
     <footer class="footer">
         <div class="row primary">
