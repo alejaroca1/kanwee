@@ -17,6 +17,13 @@ Kanwee es una tienda online que opera en Colombia. Tiene como objetivo traer **p
 # Contenido relacionado con el curso
 En esta sección expongo los requerimientos solicitados en el proyecto y en que sección se satisface la utilización de las mismas:
 
+* Objetos y Arrays. Métodos de Arrays.
+* Funciones y condicionales.
+* Generación del DOM de forma dinámica. Eventos.
+* Sintaxis avanzada.
+* Al menos una librería de uso relevante para el proyecto.
+* Manejo de promesas con fetch. 
+* Carga de datos desde un JSON local o desde una API externa.
 
 
 
