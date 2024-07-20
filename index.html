@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <script defer src="./funciones/filtros.js"></script>
+  <script defer src="./funciones/cart.js"></script>
   <script src="https://kit.fontawesome.com/0948a5a11d.js" crossorigin="anonymous"></script>
 </head>
 
@@ -41,7 +42,7 @@
         <div class="d-flex px-4">
           <button class="btn btn-outline-info" type="button">
             <i class="fas fa-cart-plus"></i>
-            <span class="cart-items badge bg-info">0</span> <!--actualizar con cantidad de productos en carrito-->
+            <span class="cart-items badge bg-info">0</span> 
           </button>
         </div>
       </div>
@@ -99,6 +100,7 @@
               <button class="category-btn btn-cuidado_personal btn btn-outline-info w-100 mb-2">Cuidado Personal</button>
               <button class="category-btn btn-tendencias btn btn-outline-info w-100 mb-2">Tendencias</button>
           </article> 
+
       </div>
     </div>
 
@@ -106,19 +108,22 @@
       <div class="container">
         <section id="products">
           <div class="row" id="products-list"></div>  
+
           <template id="product-template">
-            <div class="row mb-4">
-              <div class="product card h-100 d-flex flex-column">
-                <div class="d-flex justify-content-center align-items-center flex-grow-1">
-                  <img class="product-image card-img-top img-fluid" src="" alt="">
+            <div class="col-md-4 mb-4">
+                <div class="product card h-100 d-flex flex-column" data-id="">
+                    <div class="d-flex justify-content-center align-items-center flex-grow-1">
+                        <img class="product-image card-img-top img-fluid" src="" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 class="product-title card-title"></h2>
+                        <p class="product-price card-text"></p>
+                        <button class="btn btn-outline-info add-to-cart">Agregar al carrito</button>
+                    </div>
                 </div>
-                <div class="card-body text-center">
-                  <h2 class="product-title card-title"></h2>
-                  <p class="product-price card-text"></p>
-                </div>
-              </div>
             </div>
-          </template>
+        </template>
+        <div class="cart-items-container"></div>
         </section>
       </div>
     </div>

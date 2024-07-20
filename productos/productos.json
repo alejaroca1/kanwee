@@ -4,7 +4,7 @@
       "sys": {"id": 1},
       "fields":{
         "name": "Bronceador Canela",
-        "price": "$68200",
+        "price": "$70000",
         "categoria": "Cuidado Personal",
         "image": { "fields": {"file": {"url": "./assets/img/bronceador_canela_1.png"}}}
       }

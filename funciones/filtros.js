@@ -1,5 +1,6 @@
 const productTemplate = document.getElementById('product-template');
-//let searchInput = document.querySelector('[data-search]');
+
+
 
 class Products {
     async getProducts() {
@@ -12,6 +13,7 @@ class Products {
                 const { id } = item.sys;
                 const image = item.fields.image.fields.file.url;
                 const article = productTemplate.content.cloneNode(true).children[0];
+                article.querySelector('.product').dataset.id = id;
                 article.querySelector('.product-image').src = image;
                 article.querySelector('.product-title').textContent = title;
                 article.querySelector('.product-price').textContent = price;
