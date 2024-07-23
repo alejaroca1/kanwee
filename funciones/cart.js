@@ -3,18 +3,29 @@ class Cart {
         this.cart = this.getCart();
     }
 
-    // Get cart from local storage
     getCart() {
         return localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
     }
 
-    // Save cart to local storage
     saveCart() {
         localStorage.setItem('cart', JSON.stringify(this.cart));
     }
 
-    // Add product to cart
     addToCart(product) {
+        Toastify({
+            text: "El artículo se agregó al carrito",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "bottom", 
+            position: "right", 
+            stopOnFocus: true,
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} 
+          }).showToast();
         const existingProduct = this.cart.find(item => item.id === product.id);
         if (existingProduct) {
             existingProduct.quantity += 1;
