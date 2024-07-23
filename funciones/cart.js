@@ -36,13 +36,11 @@ class Cart {
         this.saveCart();
     }
 
-    // Remove product from cart
     removeFromCart(productId) {
         this.cart = this.cart.filter(product => product.id !== productId);
         this.saveCart();
     }
 
-    // Update product quantity
     updateQuantity(productId, quantity) {
         const product = this.cart.find(item => item.id === productId);
         if (product) {
@@ -55,17 +53,14 @@ class Cart {
         }
     }
 
-    // Get total items in cart
     getTotalItems() {
         return this.cart.reduce((total, product) => total + product.quantity, 0);
     }
 
-    // Get total price of cart
     getTotalPrice() {
         return this.cart.reduce((total, product) => total + product.price * product.quantity, 0);
     }
 
-    // Render cart items
     renderCart() {
         const cartItemsContainer = document.querySelector('.cart-items-container');
         cartItemsContainer.innerHTML = '';
@@ -90,13 +85,11 @@ class Cart {
 document.addEventListener('DOMContentLoaded', () => {
     const cart = new Cart();
 
-    // Update cart badge
     const updateCartBadge = () => {
         const cartBadge = document.querySelector('.cart-items');
         cartBadge.textContent = cart.getTotalItems();
     };
 
-    // Add event listener to add to cart buttons
     document.querySelector('#products-list').addEventListener('click', (e) => {
         if (e.target.classList.contains('add-to-cart')) {
             const productElement = e.target.closest('.product');
@@ -112,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Add event listener to cart items container
     document.querySelector('.cart-items-container').addEventListener('click', (e) => {
         const productId = parseInt(e.target.dataset.id, 10);
         if (e.target.classList.contains('remove-item')) {
@@ -130,7 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Initial render
     updateCartBadge();
     cart.renderCart();
 });
